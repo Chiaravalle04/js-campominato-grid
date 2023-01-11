@@ -94,6 +94,32 @@ main p {
     cursor: pointer;
 }
 
+#grid-container .cell-medium {
+    width: calc(((100vh - 6.5rem) - 5vh) / 9);
+    height: calc(((100vh - 6.5rem) - 5vh) / 9);
+    background-color: #080DE8;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#grid-container .cell-hard {
+    width: calc(((100vh - 6.5rem) - 5vh) / 7);
+    height: calc(((100vh - 6.5rem) - 5vh) / 7);
+    background-color: #080DE8;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     height: 2rem;
