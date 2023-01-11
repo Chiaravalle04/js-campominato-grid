@@ -11,10 +11,13 @@
 }
 
 /* Regole Generali */
-/* .container {
-    max-width: 1200px;
-    margin: 0 auto;
-} */
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
 
 /* Header */
 header {
@@ -47,6 +50,31 @@ header > button {
 main {
     height: calc(100vh - 6.5rem);
     background-color: #08D1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main p {
+    font-size: 1.3rem;
+}
+
+#grid-container {
+    width: calc((100vh - 6.5rem) - 5vh);
+    height: calc((100vh - 6.5rem) - 5vh);
+    background-color: fuchsia;
+    flex-wrap: wrap;
+}
+
+#grid-container .cell {
+    width: calc(((100vh - 6.5rem) - 5vh) / 10);
+    height: calc(((100vh - 6.5rem) - 5vh) / 10);
+    background-color: #080DE8;
+    color: #fff;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Footer */
