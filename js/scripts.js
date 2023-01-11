@@ -16,9 +16,29 @@ for (let i = 1; i <= 100; i++) {
 
     myCell.classList.add('cell');
 
-    myCell.append(i);
+    const myElement = document.createElement('span');
+
+    myElement.classList.add('none');
+
+    myCell.append(myElement);
+
+    myElement.append(i);
 
     gridContainer.append(myCell);
+
+    myCell.addEventListener('click',
+
+        function () {
+
+            myCell.classList.toggle('cell-color');
+
+            myElement.classList.toggle('none');
+
+            console.log(i);
+
+        }
+
+    );
 
 };
 
@@ -32,4 +52,5 @@ playButton.addEventListener('click',
 
     }
 
-)
+);
+

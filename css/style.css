@@ -19,6 +19,10 @@
     display: flex;
 }
 
+.cell-color {
+    background-color: #D63AB4 !important;
+}
+
 /* Header */
 header {
     height: 4.5rem;
@@ -71,10 +75,12 @@ main p {
     height: calc(((100vh - 6.5rem) - 5vh) / 10);
     background-color: #080DE8;
     color: #fff;
+    font-weight: bold;
     border: 1px solid #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /* Footer */
