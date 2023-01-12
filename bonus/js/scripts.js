@@ -1,6 +1,8 @@
 // funzione ciclo
 function myCicle (val1, val2, val3) {
 
+    gridContainer.innerHTML = '';
+
     for (let i = val1; i <= val2; i++) {
 
         const myCell = document.createElement('div');
